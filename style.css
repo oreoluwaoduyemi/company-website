@@ -930,3 +930,62 @@ button, input, textarea, select {
     transform: none;
   }
 }
+/* STUDIO X Portfolio Section */
+
+.portfolio-section {
+  padding: 100px 8%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-section .eyebrow {
+  color: #aaa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.portfolio-section h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.portfolio-section > p:not(.eyebrow) {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.portfolio-card {
+  max-width: 750px;
+  margin: auto;
+  padding: 55px 25px;
+  background: linear-gradient(135deg, #292929, #111);
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.portfolio-card h3 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.portfolio-card p {
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.portfolio-card a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.portfolio-card a:hover {
+  background: #ccc;
+  transform: translateY(-3px);
+}
