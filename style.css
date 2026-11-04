@@ -988,4 +988,13 @@ button, input, textarea, select {
 .portfolio-card a:hover {
   background: #ccc;
   transform: translateY(-3px);
+}/* MONO HOUSE Portfolio Preview */
+
+.portfolio-preview {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
