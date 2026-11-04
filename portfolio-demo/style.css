@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f6f2;
+  color: #20201e;
+  font-family: 'DM Sans', sans-serif;
+}
+
+header {
+  height: 85px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f6f2;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #20201e;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #a17c54;
+}
+
+.nav-button,
+.primary-button {
+  display: inline-block;
+  padding: 14px 23px;
+  background: #20201e;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  background: #a17c54;
+}
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.12)),
+    url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800')
+    center/cover;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  color: #a17c54;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(55px, 8vw, 100px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #d6b58f;
+}
+
+.hero-text {
+  max-width: 430px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+.about {
+  padding: 120px 12%;
+  max-width: 1000px;
+}
+
+.about h2,
+.projects h2,
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.about > p:last-child {
+  max-width: 550px;
+  color: #777;
+  line-height: 1.9;
+}
+
+.projects {
+  padding: 90px 8%;
+  background: #eeece6;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 45px;
+}
+
+.project img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.project h3 {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.project p {
+  margin-top: 8px;
+  color: #888;
+  font-size: 13px;
+}
+
+.contact {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.contact .primary-button {
+  margin-top: 15px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #20201e;
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 20px 5%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nav-button {
+    padding: 11px 15px;
+  }
+
+  .hero {
+    min-height: 550px;
+    padding: 60px 7%;
+  }
+
+  .about,
+  .projects {
+    padding: 75px 7%;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project img {
+    height: 260px;
+  }
+}
